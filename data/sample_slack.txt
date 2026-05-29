@@ -1,4 +1,0 @@
-Highlights from Slack channels this week:
-- Deployed v1.3.2 to staging
-- API regression found by QA on payments flow
-- Infra team upgraded DB minor version
