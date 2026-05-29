@@ -6,41 +6,50 @@ Nhóm gom các vấn đề đã scan thành các cụm chính.
 
 | Cluster | Candidate examples | Pattern chung |
 |---|---|---|
-| Tổng hợp tiến độ | Tổng hợp task, chuẩn bị daily/weekly update | Trưởng nhóm phải gom thông tin từ nhiều nguồn |
-| Blocker và rủi ro | Task trễ, blocker bị phát hiện muộn, dependency giữa thành viên | Khó nhìn ra vấn đề thật trước khi deadline đến gần |
-| Giao tiếp trong nhóm | Update thiếu rõ ràng, phải hỏi lại nhiều lần | Thông tin rời rạc làm meeting kéo dài |
-| Báo cáo cho quản lý | Cần báo cáo tình trạng dự án nhanh | Người quản lý cần context nhưng dữ liệu chưa sẵn |
+| Tổng hợp thông tin | Dev Weekly Report, Progress & Blocker Summary  | Gom thông tin từ nhiều nguồn rồi review |
+| Lên kế hoạch, xử lý | Priority Order, Risk Management, Late Blocker Detection | Lên kế hoạch cho dự án, xử lý các biến cố |
+| Cập nhật | Scattered Team Updates, Repetitive Data Entry Inefficiency  | Cập nhật các chức năng của dự án |
+| Tìm kiếm thông tin | Multi-Channel Communication Overhead, Lost in Discord Logs | Tìm kiếm thông tin từ các kênh khác nhau |
 
 ## Shortlist
 
-| Candidate | Actor rõ | Workflow rõ | Pain có thật | Impact đo được | Có thể dùng AI đúng chỗ | Tổng |
-|---|---:|---:|---:|---:|---:|---:|
-| Tổng hợp tiến độ và blocker của team 15 người | 5 | 5 | 5 | 5 | 5 | 25 |
-| Phát hiện blocker muộn | 5 | 4 | 5 | 4 | 4 | 22 |
-| Tự động chuẩn bị báo cáo meeting | 4 | 5 | 4 | 4 | 4 | 21 |
+| Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A được | Nhóm hiểu domain | Tổng |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Multi-Channel Communication Overhead | 5 | 5 | 4 | 5 | 4 | 5 | 5 | 33 |
+| Dev Weekly Report | 4 | 4 | 4 | 4 | 3 | 4 | 5 | 28 |
+| Progress & Blocker Summary | 4 | 5 | 3 | 5 | 5 | 4 | 4 | 30 |
 
 ## Vấn đề nhóm chọn
 
-**Trưởng nhóm phần mềm quản lý 15 người mất nhiều thời gian để tổng hợp tiến độ, phát hiện blocker và xác định rủi ro vì thông tin nằm rải rác ở task board, GitHub và tin nhắn nhóm.**
+**Multi-Channel Communication Overhead.**
 
 ## Vì sao chọn vấn đề này
 
-- Có actor rõ: trưởng nhóm phần mềm.
-- Có workflow lặp lại: trước daily/weekly/sprint review.
-- Có pain thật: phải đọc nhiều nguồn và hỏi lại nhiều người.
-- Có impact đo được: thời gian chuẩn bị, số blocker bị bỏ sót, số lần hỏi lại.
-- Có thể so sánh Rule / Workflow / Agent rõ ràng.
-- Có human boundary rõ: AI chỉ hỗ trợ tổng hợp, trưởng nhóm vẫn quyết định.
+Requirement thường nằm ở nhiều nơi khác nhau như email, slide, Notion, Discord hoặc chat nhóm, khiến người thực hiện phải mất thời gian tìm kiếm và đối chiếu thông tin.
+Đây là vấn đề có impact lớn và xảy ra thường xuyên đối với sinh viên hoặc thành viên dự án khi nhận task.
+Pain point cụ thể và dễ đo lường
+Bài toán phù hợp với AI vì AI có thể đọc nhiều nguồn dữ liệu, tổng hợp requirement, trích xuất checklist và highlight những phần quan trọng cho người dùng
+
+## Vì sao không chọn các bài khác:
+
+Dev Weekly Report: chỉ diễn ra một lần mỗi tuần, phạm vi ảnh hưởng nhỏ hơn.
+Review PRD: Bài toán này phụ thuộc vào việc dữ liệu tiến độ đã được cập nhật đầy đủ và chính xác.
 
 ## Quick validation
 
-Nhóm có thể validate nhanh bằng cách hỏi trưởng nhóm đồ án, trưởng nhóm thực tập hoặc những người từng quản lý team phần mềm.
+Nhóm hỏi nhanh 3 sinh viên và 3 thành viên dự án đã từng nhận task từ nhiều nguồn khác nhau.
 
-| Nguồn | Tín hiệu xác nhận | Tín hiệu phản bác | Điều chỉnh |
-|---|---|---|---|
-| Trưởng nhóm đồ án | Thường phải hỏi lại từng thành viên trước khi báo cáo | Team nhỏ thì không quá đau | Thu hẹp vào team khoảng 15 người |
-| Developer trong team | Update thường nằm ở chat, task board và commit | Nếu team update rất kỷ luật thì pain giảm | Thêm non-AI alternative là checklist |
-| Người quản lý/mentor | Cần biết blocker và risk nhanh | Không muốn AI tự quyết định | Giữ human review ở cuối workflow |
+| Nguồn               | Số người | Tín hiệu xác nhận                                                                                                                      | Tín hiệu phản bác                                                           | Nhóm sửa problem thế nào                                                                                          |
+| ------------------- | -------: | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Quick interview     |        3 | 3/3 người cho biết requirement thường nằm ở nhiều nơi như Discord, Notion, slide và chat nhóm; đều từng phải hỏi lại vì sợ sót yêu cầu | 1 người cho rằng nếu dự án có quy trình tốt thì chỉ cần đọc Notion là đủ    | Thu hẹp problem: không phải "quản lý toàn bộ giao tiếp", mà là "tổng hợp requirement của một task từ nhiều nguồn" |
+| Mini poll trong lớp |        6 | 5/6 từng mất hơn 20 phút để tìm và đối chiếu thông tin trước khi bắt đầu làm bài tập hoặc project                                      | Một số người cho rằng với task đơn giản thì chỉ cần checklist hoặc template | Thêm non-AI alternative: chuẩn hóa nơi lưu requirement và checklist task                                          |
+
+Insight sau validation:
+
+```
+Pain thật không nằm ở việc tìm kiếm từng nguồn thông tin riêng lẻ.
+Pain nằm ở việc phải tự tổng hợp và đối chiếu nhiều nguồn rời rạc để hiểu đầy đủ requirement của một task, dẫn đến mất thời gian và dễ bỏ sót thông tin quan trọng.
+```
 
 ## Research ngắn
 
