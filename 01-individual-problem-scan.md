@@ -6,28 +6,31 @@ Phần này dùng để quét các vấn đề thực tế trước khi chọn m
 
 ## Scan rộng
 
-| # | Lăng kính | Problem quan sát được | Ai đang đau? | Dấu hiệu thật |
-|---|---|---|---|---|
-| 1 | Tốn thời gian | Trưởng nhóm phải hỏi nhiều người để nắm tiến độ dự án | Trưởng nhóm | Mất nhiều thời gian trước daily/weekly meeting |
-| 2 | Lặp lại | Mỗi ngày/tuần đều phải tổng hợp task done/doing/blocker | Trưởng nhóm | Lặp lại theo sprint hoặc theo ngày |
-| 3 | Pain từ người khác | Thành viên bị hỏi lại vì update chưa rõ | Developer, Tester, BA, UI/UX | Thông tin tiến độ rời rạc |
-| 4 | Tốn thời gian | Trưởng nhóm phải kiểm tra task board, GitHub và tin nhắn nhóm | Trưởng nhóm | Thông tin nằm ở nhiều nguồn |
-| 5 | Rủi ro | Blocker bị phát hiện muộn, làm ảnh hưởng deadline | Cả team | Task bị trễ dây chuyền |
-| 6 | AI có thể hỗ trợ | Khó nhận ra task nào đang có nguy cơ trễ | Trưởng nhóm | Một số task In Progress quá lâu |
-| 7 | Điều phối | Khó biết ai đang chờ ai trong nhóm 15 người | Trưởng nhóm, thành viên | Có dependency giữa frontend, backend, QA, BA |
-| 8 | Báo cáo | Khi quản lý hỏi tình trạng dự án, trưởng nhóm phải tổng hợp lại từ đầu | Trưởng nhóm, quản lý | Báo cáo chưa sẵn hoặc thiếu context |
+| # | Lăng kính          | Problem name                      | Problem quan sát được                                                  | Ai đang đau?                 | Dấu hiệu thật                                  |
+| - | ------------------ | --------------------------------- | ---------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------- |
+| 1 | Tốn thời gian      | **Progress Tracking Overload**    | Trưởng nhóm phải hỏi nhiều người để nắm tiến độ dự án                  | Trưởng nhóm                  | Mất nhiều thời gian trước daily/weekly meeting |
+| 2 | Lặp lại            | **Repeated Status Compilation**   | Mỗi ngày/tuần đều phải tổng hợp task done/doing/blocker                | Trưởng nhóm                  | Lặp lại theo sprint hoặc theo ngày             |
+| 3 | Pain từ người khác | **Unclear Member Updates**        | Thành viên bị hỏi lại vì update chưa rõ                                | Developer, Tester, BA, UI/UX | Thông tin tiến độ rời rạc                      |
+| 4 | Tốn thời gian      | **Scattered Project Information** | Trưởng nhóm phải kiểm tra task board, GitHub và tin nhắn nhóm          | Trưởng nhóm                  | Thông tin nằm ở nhiều nguồn                    |
+| 5 | Rủi ro             | **Late Blocker Detection**        | Blocker bị phát hiện muộn, làm ảnh hưởng deadline                      | Cả team                      | Task bị trễ dây chuyền                         |
+| 6 | AI có thể hỗ trợ   | **Task Delay Risk Detection**     | Khó nhận ra task nào đang có nguy cơ trễ                               | Trưởng nhóm                  | Một số task In Progress quá lâu                |
+| 7 | Điều phối          | **Team Dependency Confusion**     | Khó biết ai đang chờ ai trong nhóm 15 người                            | Trưởng nhóm, thành viên      | Có dependency giữa frontend, backend, QA, BA   |
+| 8 | Báo cáo            | **Manual Project Reporting**      | Khi quản lý hỏi tình trạng dự án, trưởng nhóm phải tổng hợp lại từ đầu | Trưởng nhóm, quản lý         | Báo cáo chưa sẵn hoặc thiếu context            |
 
 ## Top 3 Problems
 
-| Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
-|---|---|---|---|
-| 1 | Trưởng nhóm khó tổng hợp tiến độ và blocker của team 15 người | Actor rõ, workflow lặp lại, impact lớn, có thể đo bằng thời gian | Cần xác định nguồn dữ liệu cụ thể |
-| 2 | Blocker bị phát hiện muộn | Ảnh hưởng trực tiếp deadline | Cần có ví dụ thực tế để chứng minh |
-| 3 | Thành viên update rời rạc khiến daily meeting kéo dài | Pain xảy ra thường xuyên | Có thể chỉ cần checklist nếu team nhỏ |
+| Rank | Problem name                   | Problem                                                       | Vì sao chọn                                                      | Điều còn chưa chắc                    |
+| ---- | ------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------- |
+| 1    | **Progress & Blocker Summary** | Trưởng nhóm khó tổng hợp tiến độ và blocker của team 15 người | Actor rõ, workflow lặp lại, impact lớn, có thể đo bằng thời gian | Cần xác định nguồn dữ liệu cụ thể     |
+| 2    | **Late Blocker Detection**     | Blocker bị phát hiện muộn                                     | Ảnh hưởng trực tiếp deadline                                     | Cần có ví dụ thực tế để chứng minh    |
+| 3    | **Scattered Team Updates**     | Thành viên update rời rạc khiến daily meeting kéo dài         | Pain xảy ra thường xuyên                                         | Có thể chỉ cần checklist nếu team nhỏ |
 
 ## Problem được chọn
 
-**Trưởng nhóm phần mềm quản lý 15 người mất nhiều thời gian để tổng hợp tiến độ, phát hiện blocker và xác định rủi ro dự án vì thông tin nằm rải rác ở nhiều nguồn như task board, GitHub và tin nhắn nhóm.**
+**Problem name:** **Progress & Blocker Summary**
+
+**Problem statement:**
+Trưởng nhóm phần mềm quản lý 15 người mất nhiều thời gian để tổng hợp tiến độ, phát hiện blocker và xác định rủi ro dự án vì thông tin nằm rải rác ở nhiều nguồn như task board, GitHub và tin nhắn nhóm.
 
 ## Actor
 
@@ -37,12 +40,12 @@ Trưởng nhóm phần mềm quản lý một team khoảng 15 người, gồm d
 
 Trước daily meeting, weekly meeting hoặc sprint review, trưởng nhóm cần biết:
 
-- Ai đang làm task nào.
-- Task nào đã xong.
-- Task nào đang bị chậm.
-- Thành viên nào đang gặp blocker.
-- Module nào có nguy cơ ảnh hưởng deadline.
-- Việc nào cần follow-up ngay.
+* Ai đang làm task nào.
+* Task nào đã xong.
+* Task nào đang bị chậm.
+* Thành viên nào đang gặp blocker.
+* Module nào có nguy cơ ảnh hưởng deadline.
+* Việc nào cần follow-up ngay.
 
 ## Current workflow
 
@@ -66,12 +69,12 @@ Nếu mỗi thành viên có 3–5 task đang mở, trưởng nhóm có thể ph
 
 ## Success metric
 
-| Metric | Trước | Sau kỳ vọng |
-|---|---:|---:|
-| Thời gian chuẩn bị update tiến độ | 60–90 phút | Dưới 30 phút |
-| Số nguồn phải đọc thủ công | 3–4 nguồn | 1 bản tổng hợp |
-| Số lần phải hỏi lại thành viên | Nhiều | Giảm khoảng 50% |
-| Blocker phát hiện muộn | Có | Giảm |
+| Metric                            |      Trước |     Sau kỳ vọng |
+| --------------------------------- | ---------: | --------------: |
+| Thời gian chuẩn bị update tiến độ | 60–90 phút |    Dưới 30 phút |
+| Số nguồn phải đọc thủ công        |  3–4 nguồn |  1 bản tổng hợp |
+| Số lần phải hỏi lại thành viên    |      Nhiều | Giảm khoảng 50% |
+| Blocker phát hiện muộn            |         Có |            Giảm |
 
 ## Non-AI alternative
 
@@ -83,4 +86,6 @@ AI có thể hỗ trợ gom thông tin tiến độ, phân loại task theo ngư
 
 ## Phán đoán ban đầu
 
-Workflow.
+**Workflow.**
+
+Vấn đề này phù hợp với hướng workflow vì có quy trình lặp lại rõ ràng: thu thập thông tin, tổng hợp tiến độ, phát hiện blocker, đánh giá rủi ro và chuẩn bị báo cáo trước meeting. AI không cần thay thế trưởng nhóm, mà đóng vai trò hỗ trợ tổng hợp và cảnh báo để trưởng nhóm ra quyết định nhanh hơn.
