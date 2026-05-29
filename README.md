@@ -142,4 +142,43 @@ research/
 
 prompts/
   ai-draft-report-prompt.md
+
+## Problem Card #1 — Weekly Report
+
+Bài toán một câu:
+Mỗi thứ Hai PM mất khoảng 90 phút tổng hợp Weekly Report từ nhiều nguồn, trong đó bước viết narrative tốn nhất và dễ trễ deadline.
+
+Actor:
+Junior PM chịu trách nhiệm gửi weekly report cho Engineering Manager và CEO.
+
+Thời điểm / bối cảnh:
+Thứ Hai hằng tuần, trước buổi leadership sync.
+
+Current workflow:
+
+1. Export Jira sprint data
+2. Lấy metrics từ Google Sheets
+3. Đọc Slack recap tuần
+4. Tổng hợp vào Google Docs
+5. Viết narrative: insight, highlight, risk, next action
+6. Self-review + format
+7. Gửi email cho stakeholders
+
+Bottleneck:
+Bước 5 – viết narrative từ raw data mất khoảng 25 phút và hay bị blank page.
+
+Impact:
+90 phút/tuần cho 1 PM. Team có 3 PM nên tổng công sức có thể khoảng 270 phút/tuần. Báo cáo trễ làm leadership thiếu bối cảnh trước buổi sync.
+
+Success metric:
+Giảm tổng thời gian từ 90 phút xuống dưới 30 phút, không tăng số câu CEO/EM phải hỏi lại.
+
+AI hypothesis:
+AI hỗ trợ cấu trúc dữ liệu và draft narrative. PM vẫn review/edit trước khi gửi.
+
+Small pilot suggestion:
+- Chạy với 1 sprint / 1 tuần dữ liệu
+- Mỗi PM cung cấp 4 mục: Done, Doing, Blocker, ETA
+- So sánh thời gian tổng hợp và chất lượng báo cáo
+
 ```

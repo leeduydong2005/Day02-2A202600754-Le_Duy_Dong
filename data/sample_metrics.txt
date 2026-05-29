@@ -1,0 +1,4 @@
+Sprint velocity: 22 story points
+Completed: 18 story points
+Open bugs: 4
+Throughput: 6 PRs merged

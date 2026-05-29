@@ -1,0 +1,7 @@
+{
+  "issues": [
+    {"key": "PROJ-101", "summary": "Implement auth login", "status": "Done", "assignee": "alice"},
+    {"key": "PROJ-142", "summary": "Payment retry logic", "status": "In Progress", "assignee": "bob"},
+    {"key": "PROJ-155", "summary": "Mobile UI fixes", "status": "Blocked", "assignee": "carol", "blocker": "backend API missing"}
+  ]
+}
